@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddipati NagaSatya Durga Maneendra | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="premium-splash" id="premiumSplashScreen">
+        <!-- Animated Background Mesh -->
+        <div class="splash-mesh"></div>
+        <div class="splash-glow"></div>
+
+        <!-- Floating Geometries -->
+        <div class="geo-shape geo-1"></div>
+        <div class="geo-shape geo-2"></div>
+        <div class="geo-shape geo-3"></div>
+
+        <div class="splash-container">
+            <div class="splash-glass-card">
+                <h1 class="splash-title">Welcome</h1>
+                <button id="enterPortfolioBtn" class="premium-btn">
+                    <span class="btn-text">Enter Portfolio</span> <i class="fas fa-arrow-right btn-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-content" id="portfolioContent"
+        style="display: none; opacity: 0; transition: opacity 1s ease-in-out;">
+        <!-- Cyber Background Particles -->
+        <div class="cyber-particles">
+            <div class="particle p-1"></div>
+            <div class="particle p-2"></div>
+            <div class="particle p-3"></div>
+            <div class="particle p-4"></div>
+            <div class="particle p-5"></div>
+            <div class="particle p-6"></div>
+        </div>
+
+        <div id="header">
+            <div class="container">
+                <nav class="glass-nav">
+                    <!-- <img src="images/logo.png" class="logo" alt="Logo"> -->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#softskills">SoftSkills</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#services">Internships</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text scroll-reveal">
+                    <h1>Hi, I'm <span class="name-highlight">Maneendra</span></h1>
+                    <h2><span class="cyber-text">Generative AI • Cybersecurity • Data Analysis</span></h2>
+                    <div class="cyber-badge">
+
+                        <span>Python • Groq API • Kali Linux • Power BI • Excel • MySQL • Genymotion</span>
+                    </div>
+                    <div class="header-actions">
+                        <a href="#portfolio" class="btn-glow">View Projects</a>
+                        <a href="#contact" class="btn-outline-glow">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="scroll-reveal">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="tech-card">
+                            <img src="images/user.jpg" alt="User">
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> <span class="cyber-text">About Me</span></h1>
+                        <p class="about-text">Motivated B.Tech Computer Science & Engineering undergraduate from Aditya
+                            University, Surampalem (Batch 2027), with hands-on experience in Generative AI,
+                            Cybersecurity,
+                            and Data Analysis. I have built a full-stack AI chatbot using Groq API and Flask with
+                            multi-user authentication, set up a real Android penetration testing lab identifying 10
+                            vulnerabilities including 2 critical-severity flaws, and created an IPL analytics dashboard
+                            analyzing 1,169 matches across 18 seasons. I am skilled in Python, Java, Kali Linux, Power
+                            BI, MySQL, and Excel, and passionate about building intelligent, secure, and data-driven
+                            solutions. Currently seeking internship or entry-level opportunities to apply my
+                            skills and grow in real-world technology environments.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"><i
+                                    class="fas fa-laptop-code"></i> Skills</p>
+                            <p class="tab-links" onclick="opentab('education')"><i class="fas fa-graduation-cap"></i>
+                                Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="skill-group">
+                                <div class="skill-item">
+                                    <div class="skill-info"><span>Languages</span><span>C, Python, Java, HTML,
+                                            CSS</span>
+                                    </div>
+
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info"><span>AI</span><span>Generative AI, Groq API</span></div>
+
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info"><span>Cybersecurity</span><span>Penetration Testing,
+                                            Vulnerability Assessment</span></div>
+
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info"><span>Data Analysis</span><span>Power BI, Excel, MySQL,
+                                            Pivot
+                                            Tables, Data Visualization</span></div>
+
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info"><span>Tools</span><span>Kali Linux, Genymotion</span></div>
+
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info"><span>Core CS</span><span>Data Structures, Algorithms,
+                                            OOP,
+                                            Database
+                                            Management</span></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Technology — Computer Science and Engineering</h3>
+                                <h4>Aditya University (2023 - 2027)</h4>
+
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Intermediate</h3>
+                                <h4>Aditya Junior College (2021 - 2023)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="softskills" class="scroll-reveal">
+            <div class="container">
+                <h1 class="sub-title"><span class="cyber-text">Soft Skills</span></h1>
+                <div class="skills-container">
+                    <div class="skill-card cyber-card">
+                        <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Problem Solving</h3>
+                        <p>Analyze complex problems and develop effective solutions through logical reasoning.</p>
+                    </div>
+                    <div class="skill-card cyber-card">
+                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Communication</h3>
+                        <p>Strong verbal and written communication to collaborate effectively.</p>
+                    </div>
+                    <div class="skill-card cyber-card">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Critical Thinking</h3>
+                        <p>Analyze situations logically to make informed and effective decisions.</p>
+                    </div>
+                    <div class="skill-card cyber-card">
+                        <div class="skill-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Time Management</h3>
+                        <p>Efficiently prioritize tasks and manage deadlines for timely completion.</p>
+                    </div>
+                    <div class="skill-card cyber-card">
+                        <div class="skill-icon"><i class="fas fa-users"></i></div>
+                        <h3>Teamwork</h3>
+                        <p>Collaborate effectively with teams to achieve shared goals and successful outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="scroll-reveal">
+            <div class="container">
+                <h1 class="sub-title"><span class="cyber-text">Projects</span></h1>
+                <div class="work-list">
+                    <div class="work cyber-card">
+                        <div class="work-img-wrapper">
+                            <img src="images/slw.png" alt="SL Website">
+                        </div>
+                        <div class="work-info">
+                            <h3>Simple List Website</h3>
+                            <p>A responsive task manager web app with add, complete, delete, and filter functionality
+                                with
+                                dark/light theme toggle.</p>
+                            <a href="https://github.com/maneendra2006/Simple-list-website" class="btn-glow btn-small"><i
+                                    class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                    </div>
+                    <div class="work cyber-card">
+                        <div class="work-img-wrapper">
+                            <img src="images/mobile.png" alt="MP Lab">
+                        </div>
+                        <div class="work-info">
+                            <h3>Mobile Pentest Lab</h3>
+                            <p>Real Android pentest lab identifying 10 vulnerabilities including 2 critical-severity
+                                flaws (CVSS 9.8, 9.1) covering OWASP Mobile Top 10.</p>
+                            <a href="https://github.com/maneendra2006/mobile-pentest-lab" class="btn-glow btn-small"><i
+                                    class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                    </div>
+                    <div class="work cyber-card">
+                        <div class="work-img-wrapper">
+                            <img src="images/AuraVault.png" alt="AuraVault">
+                        </div>
+                        <div class="work-info">
+                            <h3>AuraVault</h3>
+                            <p>Full-stack AI chatbot using Groq API and Flask with multi-user authentication, file
+                                uploads,
+                                voice input, and 11 REST API endpoints.</p>
+                            <a href="https://github.com/maneendra2006/Aura-Vault" class="btn-glow btn-small"><i
+                                    class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                    </div>
+                    <div class="work cyber-card">
+                        <div class="work-img-wrapper">
+                            <img src="images/ipldashboard.png" alt="IPL Dashboard">
+                        </div>
+                        <div class="work-info">
+                            <h3>IPL Analytics Dashboard (2008–2025)</h3>
+                            <p>Interactive Excel dashboard analyzing 1,169 IPL matches across 18 seasons with pivot
+                                tables,
+                                charts, and data-driven insights.</p>
+                            <a href="https://docs.google.com/spreadsheets/d/1ZOWgjWrClmb1IC2ZvtXqVbTKV2rGDF9I/edit?gid=1360181601#gid=1360181601"
+                                class="btn-glow btn-small"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="https://github.com/maneendra2006" class="btn-outline-glow">See More on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="services" class="scroll-reveal">
+            <div class="container">
+                <h1 class="sub-title"><span class="cyber-text">Internships</span></h1>
+                <div class="services-list">
+                    <div class="service-card cyber-card">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                        <h2>1Stop.ai<br><span>(May-2025 to Jun-2025)</span></h2>
+                        <p>• Learned foundational Cybersecurity concepts including network scanning, information
+                            gathering,
+                            vulnerability assessment, and real-world attack techniques such as SQL injection, session
+                            hijacking, and malware threats.<br>•
+                            Developed basic understanding of penetration testing tools, cryptography, proxies, and VPNs
+                            through structured hands-on training and guided coursework.</p>
+                        <a href="images/1 stop ai 2025.pdf" download class="btn-outline-glow mt-4">Download
+                            Certificate</a>
+                    </div>
+                    <div class="service-card cyber-card">
+                        <i class="fas fa-robot service-icon"></i>
+                        <h2>SkillDzire<br><span>(Apr-2026 to Jun-2026)</span></h2>
+                        <p> • Learned core Generative AI concepts including LLM architecture, tokenization, embeddings,
+                            and
+                            prompt engineering techniques such as zero-shot, few-shot, and role prompting.
+                            <br> • Built a real-time chatbot application using LLM API integration as part of structured
+                            hands-on training.
+                        </p>
+                        <a href="images/skilldzire.pdf" download class="btn-outline-glow mt-4">Download
+                            Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="certifications" class="scroll-reveal">
+            <div class="container">
+                <h1 class="sub-title"><span class="cyber-text">CERTIFICATIONS</span></h1>
+                <div class="achievement-list">
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fab fa-java"></i></div>
+                        <div class="achievement-content">
+                            <h3>Programming in Java – Oracle</h3>
+                            <p>Demonstrating proficiency in OOP concepts and Java development.</p>
+                            <a href="images/java-certificate.pdf" download
+                                class="btn-outline-glow mt-4 btn-small">Download
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fab fa-python"></i></div>
+                        <div class="achievement-content">
+                            <h3>Python — Cisco Networking Academy</h3>
+                            <p>Core Python programming concepts, scripting, and problem solving.</p>
+                            <a href="images/python.pdf" download class="btn-outline-glow mt-4 btn-small">Download
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="achievement-content">
+                            <h3>Internet of Things — NPTEL</h3>
+                            <p>Fundamentals of IoT architecture, sensors, connectivity, and smart systems.</p>
+                            <a href="images/iot.pdf" download class="btn-outline-glow mt-4 btn-small">Download
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="achievement-content">
+                            <h3>Cybersecurity — Google Cloud</h3>
+                            <p>Protecting digital assets, identifying threats, maintaining secure networks.</p>
+                            <a href="images/cybersecurity-certificate.pdf" download
+                                class="btn-outline-glow mt-4 btn-small">Download Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fas fa-database"></i></div>
+                        <div class="achievement-content">
+                            <h3>SQL — Oracle / IBM</h3>
+                            <p>Database querying, data management, and relational database concepts.</p>
+                            <a href="images/sql.pdf" download class="btn-outline-glow mt-4 btn-small">Download
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fas fa-brain"></i></div>
+                        <div class="achievement-content">
+                            <h3>Artificial Intelligence — Coursera</h3>
+                            <p>Core AI concepts, machine learning fundamentals, and real-world AI applications.</p>
+                            <a href="images/ai.pdf" download class="btn-outline-glow mt-4 btn-small">Download
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item cyber-card">
+                        <div class="achievement-icon"><i class="fab fa-html5"></i></div>
+                        <div class="achievement-content">
+                            <h3>HTML, CSS & JavaScript — Infosys Springboard</h3>
+                            <p>Structuring web pages, layout design, modern CSS practices, and JavaScript ES6+ features
+                                with
+                                DOM manipulation.</p>
+                            <a href="images/web.pdf" download class="btn-outline-glow mt-4 btn-small">Download
+                                Certificate</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="scroll-reveal">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"><span class="cyber-text">Contact</span> Me</h1>
+                        <p><i class="fas fa-paper-plane contact-icon text-glow"></i>maddipatimaneendra@gmail.com</p>
+                        <p><i class="fa-solid fa-phone contact-icon text-glow"></i>9676250258</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/maneendra2006"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/share/1AnwXNEEZQ/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/mani____2006"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/mm_chowdary_18/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/maneendra-maddipati-797746283/"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/ManeendraResume.pdf" download class="btn-glow mt-4">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="Name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="Mobile" maxlength="10" required
+                                    placeholder="Your Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="Email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="Message" rows="6" required placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-glow submit-btn">
+                                <span class="submit-text">Submit Message <i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2026 Maneendra. All rights reserved. <i class="fas fa-heart text-glow"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullscreen-loader" class="fullscreen-loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <i class="fas fa-hourglass-half"></i>
+            </div>
+            <div class="loader-text">Sending...</div>
+        </div>
+    </div>
+
+    <div id="success-overlay" class="success-overlay">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="success-text">Message Sent Successfully!</div>
+            <div class="success-subtext">Thank you for contacting me. I'll get back to you soon.</div>
+            <button class="success-close-btn" id="successCloseBtn">OK</button>
+        </div>
+    </div>
+
+    <script>
+        const fullscreenLoader = document.getElementById('fullscreen-loader');
+        const successOverlay = document.getElementById('success-overlay');
+        const successCloseBtn = document.getElementById('successCloseBtn');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mouse following light effect
+            const splashScreen = document.getElementById('premiumSplashScreen');
+            if (splashScreen) {
+                splashScreen.addEventListener('mousemove', (e) => {
+                    const x = e.clientX / window.innerWidth;
+                    const y = e.clientY / window.innerHeight;
+                    splashScreen.style.setProperty('--mouse-x', x);
+                    splashScreen.style.setProperty('--mouse-y', y);
+                });
+            }
+
+            // Enter button logic
+            const enterBtn = document.getElementById('enterPortfolioBtn');
+            const portfolioContent = document.getElementById('portfolioContent');
+
+            if (enterBtn) {
+                // Prevent scrolling while on splash
+                document.body.style.overflow = 'hidden';
+
+                enterBtn.addEventListener('click', () => {
+                    // Start fade out of splash
+                    splashScreen.style.opacity = '0';
+                    splashScreen.style.pointerEvents = 'none';
+
+                    // Show portfolio, but keep opacity 0
+                    portfolioContent.style.display = 'block';
+
+                    setTimeout(() => {
+                        splashScreen.style.display = 'none';
+                        // Force reflow
+                        void portfolioContent.offsetWidth;
+                        portfolioContent.style.opacity = '1';
+                        document.body.style.overflow = 'auto';
+                        initializeScrollReveal();
+                    }, 800); // Wait for splash to fade out
+                });
+            } else {
+                initializeScrollReveal();
+            }
+        });
+
+        // Intersection Observer for Scroll Animations
+        function initializeScrollReveal() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (let t of tablinks) { t.classList.remove("active-link"); }
+            for (let c of tabcontents) { c.classList.remove("active-tab"); }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() { sidemenu.style.right = "0"; }
+        function closemenu() { sidemenu.style.right = "-220px"; }
+
+        document.querySelectorAll('nav ul li a').forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 800) {
+                    closemenu();
+                }
+            });
+        });
+
+        const nav = document.querySelector('.glass-nav');
+        window.addEventListener('scroll', function () {
+            updateActiveNav();
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('#header, #about, #softskills, #portfolio, #services, #certifications, #contact');
+            const navLinks = document.querySelectorAll('nav ul li a');
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ14ePS42p6g5DAuOJn-sqULoX1z4qe7EYtFFsUmtox24O7RtdlfWOg8JH2o6e-KG3/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            fullscreenLoader.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    setTimeout(() => {
+                        fullscreenLoader.style.display = 'none';
+                        successOverlay.style.display = 'flex';
+                        form.reset()
+                    }, 500)
+                })
+                .catch(error => {
+                    console.error('Error!', error.message)
+                    fullscreenLoader.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                })
+        })
+
+        successCloseBtn.addEventListener('click', () => {
+            successOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        })
+
+        successOverlay.addEventListener('click', (e) => {
+            if (e.target === successOverlay) {
+                successOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        })
+    </script>
+</body>
+
+</html>
